@@ -72,57 +72,9 @@
   </div>
 
   <script>
-    const noBtn = document.getElementById("noBtn");
-    const yesBtn = document.getElementById("yesBtn");
-    const question = document.getElementById("question");
-
-    noBtn.addEventListener("mouseover", () => {
-      const maxX = window.innerWidth - noBtn.offsetWidth;
-      const maxY = window.innerHeight - noBtn.offsetHeight;
-
-      noBtn.style.left = Math.random() * maxX + "px";
-      noBtn.style.top = Math.random() * maxY + "px";
-    });
-
-    yesBtn.addEventListener("click", () => {
-      document.body.style.backgroundImage =
-        'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://i.blogs.es/1b5db6/malena-fernando/650_1200.jpeg")';
-
-      question.textContent = "Sabía que dirías que sí 💘🥰";
-      document.querySelector(".buttons").style.display = "none";
-    });
-<script>
-  const noBtn = document.getElementById("noBtn");
-  const yesBtn = document.getElementById("yesBtn");
-  const question = document.getElementById("question");
-
-  function moveButtonRandom(btn) {
-    const maxX = window.innerWidth - btn.offsetWidth;
-    const maxY = window.innerHeight - btn.offsetHeight;
-
-    const x = Math.random() * maxX;
-    const y = Math.random() * maxY;
-
-    btn.style.left = x + "px";
-    btn.style.top = y + "px";
-  }
-
-  noBtn.addEventListener("mouseover", () => {
-    moveButtonRandom(noBtn);
-  });
-
-  yesBtn.addEventListener("mouseover", () => {
-    moveButtonRandom(yesBtn);
-  });
-
-  yesBtn.addEventListener("click", () => {
-    document.body.style.backgroundImage =
-      'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("fondo2.jpg")';
-
-    question.textContent = "Ahora ya no hay vuelta atrás 😏💘";
-  });
-</script>
+ 
 
 </body>
 </html>
+
 
